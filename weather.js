@@ -43,7 +43,7 @@ async function getweather(){
     let newCard = document.createElement("div");
     newCard.className = "card";
     let rect = document.createElement("img");
-    rect.src="./images/Rectangle 1.png";
+    rect.src="./Rectangle 1.png";
     newCard.appendChild(rect);
     let condition = document.createElement("img");
     condition.className="weather";
