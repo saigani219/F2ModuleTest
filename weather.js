@@ -50,16 +50,16 @@ async function getweather(){
     const desc = document.createElement("div");
     desc.className="weather-type";
     if(weather.main.toLowerCase().includes("sun")){
-    condition.src = "./images/" + "Sun cloud angled rain.png";
+    condition.src = "Sun cloud angled rain.png";
     }
     else if(weather.main.toLowerCase().includes("rain")){
-        condition.src = "./images/" + "Moon cloud mid rain.png"; 
+        condition.src = "Moon cloud mid rain.png"; 
     }
     else if(weather.main.toLowerCase().includes("wind")){
-        condition.src = "./images/" + "Tornado.png"; 
+        condition.src = "Tornado.png"; 
     }
     else{
-        condition.src = "./images/" + "Moon cloud fast wind.png"; 
+        condition.src = "Moon cloud fast wind.png"; 
     }
     desc.innerText = weather.description;
     newCard.appendChild(condition);
