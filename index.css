@@ -1,0 +1,159 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    position:absolute;
+    width : 1200px;
+    height: 100%;
+    margin : 50px 150px; 
+    background: linear-gradient(168.44deg, #2E335A 1.62%, #1C1B33 95.72%);
+    border-radius: 25px;
+
+}
+h1{
+text-align: center;
+/* width: 519px;
+height: 52px;
+top: 45px;
+left: 449px; */
+color:white;
+font-weight: 700;
+letter-spacing: -0.40799999237060547px;
+}
+
+.search-bar{
+display: flex;
+align-items: center;
+position : absolute;
+width: 500px;
+height: 50px;
+top: 144px;
+left: 200px;
+padding: 7px 8px 7px 8px;
+border-radius: 10px;
+background: linear-gradient(168.44deg, rgba(46, 51, 90, 0.26) 1.62%, rgba(28, 27, 51, 0.26) 95.72%);
+box-shadow: 0px 4px 4px 0px #00000040 inset;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+padding : 10px;
+  color: #EBEBF599;
+}
+
+.search-bar > input{
+    color : white;
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.40799999237060547px;
+    width : 300px;
+    text-align: left;
+    background: linear-gradient(168.44deg, rgba(46, 51, 90, 0.26) 1.62%, rgba(28, 27, 51, 0.26) 95.72%);
+    border: none;
+}
+
+::placeholder{
+    color: #EBEBF599;
+}
+
+button{
+position : absolute;
+width: 188px;
+height: 53px;
+top: 150px;
+left: 750px;
+font-size:20px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: -0.40799999237060547px;
+border-radius: 10px;
+background: #4A397FB2;
+color: white;
+
+}
+
+.cities{
+    display: flex;
+    flex-flow:row wrap;
+    column-gap: 30px;
+    row-gap : 30px;
+    position : absolute;
+    top : 230px;
+    left : 50px;
+    width : 92%;
+    height : auto;
+}
+
+.card{
+    color:white;
+    position : relative;
+    left : 10px;
+    top : 50px;
+}
+
+.card .weather{
+    position: absolute;
+    top : -20px;
+    left : 178px;
+    z-index : 1;
+}
+.temperature{
+    position: absolute;
+    top : 25px;
+    color: white;
+    font-size:45px;
+    left : 20px;
+}
+.H{
+    position: absolute;
+    top : 122px;
+    color : rgba(235, 235, 245, 0.6);
+    font-size:10px;
+    left : 25px;
+}
+.L{
+    position: absolute;
+    top : 122px;
+    color:  rgba(235, 235, 245, 0.6);
+    font-size:10px;
+    left : 70px;
+}
+.place{
+    position: absolute;
+    top : 140px;
+    color: white;
+    font-size:16px;
+    left : 25px;
+}
+
+.weather-type{
+    position: absolute;
+    top : 145px;
+    color: white;
+    font-size:13px;
+    left : 270px;
+}
+
+.temperature::after {
+    content: "\00B0"; /* Unicode character for degree symbol */
+    vertical-align: super; /* Align the degree symbol as a superscript */
+    font-size: 0.7em; /* Adjust the font size to scale the degree symbol */
+  }
+
+.H::after {
+    content: "\00B0"; /* Unicode character for degree symbol */
+    vertical-align: super; /* Align the degree symbol as a superscript */
+    font-size: 0.7em; /* Adjust the font size to scale the degree symbol */
+  }
+
+.L::after {
+    content: "\00B0"; /* Unicode character for degree symbol */
+    vertical-align: super; /* Align the degree symbol as a superscript */
+    font-size: 0.7em; /* Adjust the font size to scale the degree symbol */
+  }
